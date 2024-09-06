@@ -54,7 +54,7 @@ In primul rand,vom creea mai multe structuri,folosite cu diverse scopuri:
 -   o structura de tip arbore binar unde vom avea campurile score,numele echipei (pentru ca task-ul 5 solicita prelucrarea unui AVL am introdus si height);
 
 Pentru un aspect modularizat,am decis sa separ in headere si fisiere separate(ex: list.c list.h trees.c trees.h ...)
-Am introdus toate bibliotecile relevante in main,respectiv in alte fisiere.c unde aveam nevoie de mai multe biblioteci
+Am introdus toate bibliotecile relevante in main,respectiv in alte fisiere .c unde aveam nevoie de mai multe biblioteci
 
 # Rezolvarea task-urilor:
 
@@ -77,12 +77,12 @@ Functia `media_aritmetica(NodeA *head,int nr_jucatori)`:
 -   calculeaza score-ul initial pentru fiecare echipa
 
 Functia `stergere_element_lista(NodeA** headm,char* nume_echipa)`:
--   va elimina echipa aferenta cerintei si sunt incluse toate cazurile:
--       cazul in care capul de lista este gol
--       cazul in care este primul element
--       cazul in care se afla oriunde altundeva 
--       vom sterge elementul cu ajutorul functiei free si vom realiza legaturile intre nodul de dinainte si nodul de dupa nodul sters
--   va fi apelata (&(*head),....) in functia min care gaseste echipa cu score ul cel mai mic iar fabs(min-avg)>epsilon,unde epsilon=0.000001 acopera cazul in care trebuie sa fie eliminata prima echipa si nu mai trebuie o a doua parcurgere
+- va elimina echipa aferenta cerintei si sunt incluse toate cazurile:
+- cazul in care capul de lista este gol
+- cazul in care este primul element
+- cazul in care se afla oriunde altundeva 
+- vom sterge elementul cu ajutorul functiei free si vom realiza legaturile intre nodul de dinainte si nodul de dupa nodul sters
+- va fi apelata (&(*head),....) in functia min care gaseste echipa cu score ul cel mai mic iar fabs(min-avg)>epsilon,unde epsilon=0.000001 acopera cazul in care trebuie sa fie eliminata prima echipa si nu mai trebuie o a doua parcurgere
 
 Functia `modificare_lista(NodeA** head,int *numar_echipe)`
 -   va apela cele doua functii:multiplu_de_2 prin care se verifica daca numarul de echipe este multiplu de 2(conditie de stop)

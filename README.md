@@ -90,12 +90,12 @@ si functia min prin care se va elimina echipa cu score ul minim
 -   numar_echipe este transmis prin referinta deoareece i se va modifica valoarea
 
 ## TASK 3:
-Functia `creare_din_lista(NodeA** head,Queue* q)` folosita pentru a parcurge lista de echipe si a le introduce in coada
+Functia `creare_din_lista(NodeA** head,Queue* q)` folosita pentru a parcurge lista de echipe si a le introduce in coada. 
 In interiorul acestei functii ma folosesc de functia `creare_queue_echipe(...)` pentru a adauga elemente noi in coada
 
 Functia `creare_echipe_din_stack(...)` folosita cu un scop identic,in urma deciderii stack-ului de invingatori
 
-Functiile `print_queue_to_file(...)` respectiv `print_stack_to_file(...)` folosite pentru a afisa in fisierul de out cu formatul necesar folosite in functia principala a acestui task `afisare_rezultate_meciuri(...)`
+Functiile `print_queue_to_file(...)` respectiv `print_stack_to_file(...)` folosite pentru a afisa in fisierul de out cu formatul necesar care sunt folosite in functia principala a acestui task `afisare_rezultate_meciuri(...)`
 
 Funcia `afisare_rezultate_meciuri(...)` este folosita pentru a afisa in fisierul de out stiva de invingatori si coada cu meciuri
 -   in cazul in care este prima runda se va creea coada din lista,apoi o vom sterge
@@ -104,28 +104,28 @@ Funcia `afisare_rezultate_meciuri(...)` este folosita pentru a afisa in fisierul
 -   printam stiva in fisierul de out
 -   stergem stiva de invinsi
 -   stergem coada
--   creem o coada noua in care noua in care vom pune stiva de invingatori
+-   creem o coada noua in care vom pune stiva de invingatori
 -   stergem stiva de invinsi
--   cand ajungem la numarul de 8  atunci vom copia coada intr-o lista speciala
+-   cand ajungem la numarul de 8 atunci vom copia coada intr-o lista speciala
 
 ## TASK 4:
-Functia `BST* newNode(...)` implementata pentru un arbore care stocheaza si informatii despre numele echipei,score-ul si inaltimea(fiind vorba la task-ul 5 de un AVL)
+Functia `BST* newNode(...)` este implementata pentru un arbore care stocheaza si informatii despre numele echipei,score-ul si inaltimea(fiind vorba la task-ul 5 de un AVL)
 
 Functia `BST* insertBST(...)` folosita pentru a insera in BST acoperind edge case-ul in care este acelasi scor si se va lua in functie de numele echipei
 
 Functia `displayTeamsAndPoints(...)` folosita pentru a afisa in outfile
 
 ## TASK 5:
-Functia `BST* insertAVL(...)` care are implementarea de la functia `BST* insertBST(...)`,actualizarea inaltimii nodului curent.In plus contine informatia daca arborele este balansat.In functie de factorul de eschilibru se vor efectua rotatiile necesare.
+Functia `BST* insertAVL(...)` care are implementarea de la functia `BST* insertBST(...)`,actualizarea inaltimii nodului curent.In plus contine informatia daca arborele este balansat.In functie de factorul de echilibru se vor efectua rotatiile necesare.
 
-Functia `transformAVL(...)` recursiva care parcurge arborele intr-o inordine inversa si inserta intr-un AVL nou format de la arborele vechi
+Functia recursiva `transformAVL(...)` care parcurge arborele intr-o inordine inversa si insereaza intr-un AVL nou format de la arborele vechi
 
 Functia `displayLevelTwo(...)` folosita pentru a afisa echipa aflata pe nivelul 2 in outfile
 
 
 ## PROBLEME SI BUG-URI INTALNITE
 -   In cazul multor echipe existau endline-uri si whitespaces la final in fisier
--   Avand in vedere ca in struct_and_queue.h am nevoie si de structura listei am decis sa listA.h si listB.h pe care le-am folosit in diferite parti pentru nu a avea eroare "redefinition of struct..."
+-   Avand in vedere ca in struct_and_queue.h am nevoie si de structura listei am decis sa fac doua headere separate listA.h si listB.h pe care le-am folosit in diferite parti pentru nu a avea eroare a"redefinition of struct..."
 
 
 
